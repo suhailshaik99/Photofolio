@@ -1,0 +1,50 @@
+section {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+}
+
+.album {
+    height: 20rem;
+    width: 25rem;
+    padding: 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+    transition: all 0.3s ease-in-out;
+}
+
+.album:hover {
+    background-color: #6e71c0;
+    color: white;
+    cursor: pointer;
+}
+
+#album-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #fff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#album-image-div>img {
+    width: 8rem;
+    height: 8rem;
+}
+
+#album-name-div {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}

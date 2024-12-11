@@ -1,0 +1,11 @@
+nav {
+    padding: 0.5rem 4rem;
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+    background-color: #a47bed;
+}
+
+nav h1 {
+    font-size: 2rem;
+}

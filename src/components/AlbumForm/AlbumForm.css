@@ -1,0 +1,75 @@
+.album-details {
+    max-width: 110rem;
+    margin: 1.5rem auto;
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.add-album-button {
+    height: 3.3rem;
+    width: 10rem;
+    border: 3px solid #0077ff;
+    color: #0077ff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #e5f1ff;
+    font-weight: bolder;
+}
+
+.cancel-album-button {
+    height: 3.3rem;
+    width: 10rem;
+    border: 3px solid red;
+    color: red;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #ffe7e5;
+    font-weight: bolder;
+}
+
+.album-create-form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.album-form {
+    padding: 1rem;
+    max-width: 70rem;
+    background-color: #f4f4f4;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+
+#input-album-name {
+    width: 40rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    border: none;
+}
+
+#clear-btn,
+#create-btn {
+    height: 4rem;
+    width: 10rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background-color: red;
+    border: none;
+}
+
+#create-btn {
+    background-color: #0077ff;
+}
