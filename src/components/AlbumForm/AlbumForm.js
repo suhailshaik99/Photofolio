@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useState, useRef } from "react";
 import { db } from "../../firebase-config";
 import { collection, addDoc } from "firebase/firestore";
@@ -5,6 +7,7 @@ import "./AlbumForm.css";
 
 function AddAlbumForm({ handleNewAlbum }) {
   const albumName = useRef();
+  
   async function onClickAdd(e) {
     e.preventDefault();
     const album = {
@@ -13,6 +16,7 @@ function AddAlbumForm({ handleNewAlbum }) {
     };
     const collectionRef = collection(db, "Albums");
     const docRef = await addDoc(collectionRef, album);
+    toast.success("Album added successfully!", { position: "top-right" });
     handleNewAlbum(docRef);
     onClickClear(e);
   }
@@ -23,7 +27,9 @@ function AddAlbumForm({ handleNewAlbum }) {
   }
 
   return (
+    
     <div className="album-form">
+      <ToastContainer />
       <h1>Create an album</h1>
       <form className="album-create-form" onSubmit={onClickAdd}>
         <input
